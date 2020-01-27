@@ -4,13 +4,12 @@
   "description": "",
   "main": "server.js",
   "engines": {
-    "node": "10.x.x",
-    "yarn": ">=1.10.x"
+    "node": "10.x.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js --ignore public",
-    "start": "yarn pm2-runtime pm2.config.js --env production"
+    "start": "pm2-runtime --env production -i max ./server.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +23,7 @@
   "homepage": "https://github.com/xMerlinLabs/case-study#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "helmet": "^3.21.2",
     "nodemon": "^2.0.2",
     "pm2": "^4.2.3"
   }
