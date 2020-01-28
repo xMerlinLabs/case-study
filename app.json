@@ -1,3 +1,11 @@
 {
-  "repository": "https://github.com/xMerlinLabs/case-study.git"
+  "repository": "https://github.com/xMerlinLabs/case-study.git",
+  "environments": {
+    "review": {
+      "env": {
+        "IS_PR": "true",
+        "NODE_ENV": "production"
+      }
+    }
+  }
 }
