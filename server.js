@@ -26,7 +26,7 @@ app.use(redirectToPrimaryDomain);
 // Serve site
 app.use(express.static('public'));
 
-app.listen(PORT, () => console.log(`Listening on port ${PORT}!`));
+app.listen(PORT, () => console.log(`[SERVER] Listening on port ${PORT}!`));
 
 
 
@@ -43,7 +43,7 @@ const IS_PR = (process.env.IS_PR || '').toLowerCase() === 'true';
 const DISABLE_FORCE_HTTPS = (process.env.DISABLE_FORCE_HTTPS || '').toLowerCase() === 'true';
 
 // Leaving this in to help with any future debugging
-console.log('env:', JSON.stringify({
+console.log('[SERVER] env:', JSON.stringify({
   IS_PR,
   DOMAIN,
   DISABLE_FORCE_HTTPS,
