@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js --ignore public",
+    "dev": "gulp default & nodemon server.js --ignore public",
+    "build": "npm install --production=false && gulp prod && npm install --production",
     "start": "pm2-runtime -i max ./server.js"
   },
   "repository": {
