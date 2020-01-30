@@ -1,0 +1,14 @@
+.footer {
+    background: $dark-gray;
+    color: #fff;
+}
+.footer--title {
+    @include h2;
+} 
+.footer--subtitle {
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 12.18px;
+    line-height: 16px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,43 @@
+.two-col-img-with-text {
+    margin-left: $section-margin;
+    margin-right: $section-margin;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    &.img-left {
+        .two-col-img-with-text--left-col {
+            order: 2;
+        }
+        .two-col-img-with-text--right-col {
+            order: 1;
+            margin-right: 50px;
+        }
+    }
+    &.img-right {
+        .two-col-img-with-text--left-col {
+            margin-right: 50px;
+        }
+    }
+}
+.two-col-img-with-text--content {
+    display: flex;
+}
+.two-col-img-with-text--left-col {
+    width: 40%;
+}
+.two-col--title {
+    @include h2;
+}
+.two-col-subtitle {
+    @include italic;
+}
+.two-col-body-copy {
+    @include bodycopy;
+}
+.two-col-img-with-text--right-col {
+    width: 60%;
+}
+.two-col-img-with-text--image img {
+        max-width: 100%;
+  
+}

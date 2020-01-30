@@ -1,6 +1,29 @@
+@import "./variables.scss";
 @import "../components/hero/hero.scss";
+@import "./layout.scss";
 
-h1 {
-  color: blue;
+// components
+@import "../components/top-bar-section/top-bar.scss";
+@import "../components/intro-section/intro.scss";
+@import "../components/our-challenge-section/our-challenge.scss";
+@import "../components/robust-search-section/robust-search.scss";
+@import "../components/full-width-img-section/full-width.scss";
+@import "../components/two-col-img-with-text-section/two-col-img-with-text.scss";
+@import "../components/footer/footer.scss";
 
+// global stuff
+body {
+  margin: 0;
+}
+
+.gray-bg-section {
+  color: #fff;
+  background: $dark-gray;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.content-width-limit {
+  max-width: 60vw;
 }

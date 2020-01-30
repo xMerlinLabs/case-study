@@ -19,7 +19,7 @@ gulp.task('sass', function() {
 
 gulp.task('copy', function() {
   console.log('copy files?');
-  return gulp.src(['./src/components/**/*.{img,png,svg,mp4}', './src/img/*.{img,png,svg,mp4}', './src/img/*.{img,png,svg,mp4}'])
+  return gulp.src(['./src/components/**/*.{img,png,svg,mp4,jpg,jpeg}', './src/img/*.{img,png,svg,mp4,jpg,jpeg}'])
     .pipe(gulp.dest('./public/img/'))
 });
 
@@ -42,7 +42,7 @@ gulp.task('watch', function() {
   gulp.watch(sassMain, gulp.series('sass'));
   gulp.watch(sassSources, gulp.series('sass'));
   gulp.watch(['./src/pages/index.html'], gulp.series('fileinclude'))
-  gulp.watch(['./src/components/**/*.{img,png,svg,mp4}', './src/img/*.{img,png,svg,mp4}', './src/img/*.{img,png,svg,mp4}'], gulp.series('copy'))
+  gulp.watch(['./src/components/**/*.{img,png,svg,mp4,jpg,jpeg}', './src/img/*.{img,png,svg,mp4,jpg,jpeg}'], gulp.series('copy'))
   //gulp.series(gulp.watch(sassMain,['sass']), gulp.watch(sassSources,['sass']));
 });
 

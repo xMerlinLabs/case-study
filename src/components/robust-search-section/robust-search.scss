@@ -1,0 +1,40 @@
+.robust-search-section {
+    margin: 0 $section-margin;
+}
+.robust-search-section--top {
+    display: flex;
+}
+.robust-search--left-col {
+    
+}
+.robust-search--title {
+    @include h2;
+}
+.robust-search--subtitle {
+    @include italic;
+}
+
+.robust-search--list {
+    padding: 0;
+    li {
+        list-style: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        &:before {
+            content: "";
+            background-image: url('./img/bullets.svg');
+            background-repeat: no-repeat;
+            height: 30px;
+            width: 30px;
+            margin-right: 20px;
+            display: inline-block;
+        }
+    }
+}
+.robust-search--right-col {}
+.robust-search--image img {
+    max-width: 100%;
+}
+.robust-search-section--bottom {}
