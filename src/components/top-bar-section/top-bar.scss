@@ -1,0 +1,17 @@
+.top-bar {
+    display: flex;
+    margin: 10px $section-margin 10px $section-margin;
+}
+.top-bar--nav {
+    
+    margin-left: auto;
+    li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 16px;
+    }
+    a {
+        text-decoration: none;
+        @include mainnav;
+    }
+}

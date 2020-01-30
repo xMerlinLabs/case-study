@@ -1,0 +1,10 @@
+.our-challenge-section {
+    
+}
+.our-challenge--content {
+    @include body-copy-font;
+    margin: 0 auto;
+}
+.our-challenge--title {
+    @include h2;
+}

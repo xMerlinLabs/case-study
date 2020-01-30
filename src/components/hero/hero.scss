@@ -1,3 +1,56 @@
 .hero {
-  background: red;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.56);
+  }
+}
+
+.hero--bg-img {
+  
+}
+
+.hero--text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero--title {
+  @include h1;
+  margin: 0 0 22px 0;
+  padding: 0;
+}
+.hero--sub-title {
+  font-size: 21.95px;
+  line-height: 25px;
+  letter-spacing: 0.25px;
+  font-family: Georgia;
+  font-weight: normal;
+  margin: 22px 0 22px 0;
+  padding: 0;
+}
+.hero--sub-sub-title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12.18px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0;
 }
