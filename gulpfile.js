@@ -18,7 +18,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('copy', function() {
-  console.log('copy files?');
+  console.log('[GULP] copy files');
   return gulp.src(['./src/components/**/*.{img,png,svg,mp4}', './src/img/*.{img,png,svg,mp4}', './src/img/*.{img,png,svg,mp4}'])
     .pipe(gulp.dest('./public/img/'))
 });
