@@ -10,3 +10,7 @@
 Right now the repo is set up for a simple static site, serving everything in `/public`.
 
 Use `yarn dev` for local development.
+
+Use `gulp default` to run Gulp tasks for the following
+- Listen for changes to sass files and concat and compile into css
+- Listen for changes to html files and run gulp-file-include to allow for html includes
