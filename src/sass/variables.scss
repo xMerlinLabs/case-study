@@ -1,0 +1,66 @@
+// colors
+$page-background-color: #efefef;
+$purple: #902D63;
+$body-copy-color: rgba(0, 0, 0, 0.87);
+$emphasis-color: rgba(0, 0, 0, 0.54);
+$button-color: #222222;
+
+// fonts
+@mixin h1 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 65.84px;
+  line-height: 74px;
+  letter-spacing: -0.5px;
+}
+
+@mixin h2 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 37.31px;
+  line-height: 42px;
+  letter-spacing: 0.25px;
+}
+
+@mixin h3 {
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 21.95px;
+  line-height: 25px;
+  letter-spacing: 0.25px;
+}
+
+@mixin body-copy-font {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+@mixin eyebrow {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12.18px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $purple;
+}
+
+// buttons
+@mixin button {
+  background: $button-color;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14.21px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
