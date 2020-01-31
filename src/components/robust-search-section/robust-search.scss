@@ -1,5 +1,6 @@
 .robust-search-section {
-    margin: 60px $section-margin;
+    margin: 60px auto;
+    max-width: $max-content-width;
 }
 .robust-search-section--top {
     margin-bottom: 60px;
