@@ -2,15 +2,15 @@
   "name": "case-study",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server/index.js",
   "engines": {
     "node": "10.x.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp default & nodemon server.js --ignore public",
+    "dev": "gulp default & (sleep 3 && nodemon server/index.js --ignore public)",
     "build": "npm install --production=false && gulp prod && npm install --production",
-    "start": "pm2-runtime -i max ./server.js"
+    "start": "pm2-runtime -i max server/index.js"
   },
   "repository": {
     "type": "git",
