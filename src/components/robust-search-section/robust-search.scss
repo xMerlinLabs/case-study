@@ -5,7 +5,7 @@
     display: flex;
 }
 .robust-search--left-col {
-    
+
 }
 .robust-search--title {
     @include h2;
@@ -24,7 +24,7 @@
         margin-bottom: 15px;
         &:before {
             content: "";
-            background-image: url('./img/bullets.svg');
+            background-image: url('<<<IMAGE_HOST>>>/img/bullets.svg');
             background-repeat: no-repeat;
             height: 30px;
             width: 30px;
