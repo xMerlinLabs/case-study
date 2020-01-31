@@ -1,6 +1,7 @@
 .two-col-img-with-text {
-    margin-left: $section-margin;
-    margin-right: $section-margin;
+    max-width: $max-content-width;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 60px;
     margin-bottom: 60px;
 }
