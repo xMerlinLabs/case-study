@@ -42,8 +42,7 @@ gulp.task('watch', function() {
   gulp.watch(sassMain, gulp.series('sass'));
   gulp.watch(sassSources, gulp.series('sass'));
   gulp.watch(['./src/pages/index.html'], gulp.series('fileinclude'))
-  gulp.watch(['./src/components/**/*.{img,png,svg,mp4,jpg,jpeg}', './src/img/*.{img,png,svg,mp4,jpg,jpeg}'], gulp.series('copy'))
-  //gulp.series(gulp.watch(sassMain,['sass']), gulp.watch(sassSources,['sass']));
+  gulp.watch(['./src/components/**/*', './src/img/*'], gulp.series('copy'))
 });
 
 gulp.task('default', gulp.series('sass', 'fileinclude', 'copy', 'watch'));
