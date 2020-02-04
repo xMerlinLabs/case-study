@@ -1,0 +1,109 @@
+.outcomes-section {
+
+  margin: 60px auto 80px auto;
+  max-width: 80%;
+  display: block;
+}
+
+.outcomes-section--top {
+  margin: 60px auto 80px auto;
+  display: block;
+  text-align: center;
+  max-width: 60vw;
+}
+.outcomes--title {
+  @include h2;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+}
+.outcomes--intro {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.25px;
+}
+
+
+.outcomes--col-container {
+  flex-direction: column;
+}
+
+.outcomes--left-col {
+  width: 100%;
+  margin: 0 $section-margin 40px $section-margin;
+}
+.outcomes--left-col-title {
+  @include h2;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
+}
+.outcomes--left-col-subtitle {
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.outcomes--list {
+  padding: 0;
+  font-size: 18px;
+  letter-spacing: .5px;
+  font-family: 'Lato';
+  li {
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    &:before {
+      content: "";
+      background-image: url('./img/bullets.svg');
+      background-repeat: no-repeat;
+      height: 30px;
+      width: 40px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+  }
+}
+
+.outcomes--right-col {
+}
+.outcomes--image img {
+  max-width: 100%;
+  display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
+}
+
+
+@media (min-width: $mobile-breakpoint) {
+  .outcomes-section {
+  }
+  .outcomes--left-col {
+    width: 40%;
+    margin-right: 60px;
+  }
+  .outcomes--right-col {
+    width: 60%;
+    margin-top: 0;
+    float: right;
+  }
+  .outcomes--image img {
+    float: right
+  }
+  .outcomes--col-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .outcomes--image img {
+    max-height: 500px;
+  }
+}
+

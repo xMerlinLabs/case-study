@@ -41,7 +41,7 @@ gulp.task('watch', function() {
   console.log('[GULP] watching...');
   gulp.watch(sassMain, gulp.series('sass'));
   gulp.watch(sassSources, gulp.series('sass'));
-  gulp.watch(['./src/pages/index.html'], gulp.series('fileinclude'))
+  gulp.watch(['./src/pages/index.html', './src/components/**/*.html'], gulp.series('fileinclude'))
   gulp.watch(['./src/components/**/*', './src/img/*'], gulp.series('copy'))
 });
 
