@@ -4299,9 +4299,9 @@ sver-compat@^1.5.0:
     es6-symbol "^3.1.1"
 
 systeminformation@^4.14.16:
-  version "4.21.0"
-  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-4.21.0.tgz#04099ddc218ad42990c4be80f7c21ec4eff6ba9c"
-  integrity sha512-zh53EDwSPFUBLvNS2bdjK/haovRdzJRMREmis1IUkzmQDGuk9ByuSgPS/LTT+oXONVJbRHEuNsgv2r8m/4AEFg==
+  version "4.30.6"
+  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-4.30.6.tgz#b56074968f2ea28ac118f23221c449b0f763db22"
+  integrity sha512-NV7zo9NU7fWSuiCORZmMLe90cFrrTS6jfalrQ0/5B7JGQ2ei15c2gmfICBwWdmviyv/FXAFVReySxOtDDkppqw==
 
 tar@^2.0.0:
   version "2.2.2"
