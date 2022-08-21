@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('node-sass'));
 var fileinclude = require('gulp-file-include');
 
 var sassMain = ['./src/sass/main.scss'];
